@@ -1,13 +1,13 @@
-package com.uni.image
+package edu.temple.image
 
 import android.app.Dialog
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.uni.image.R
 
 class ImageAdapter(var list:ArrayList<MovieModel>): RecyclerView.Adapter<ImageAdapter.Viewholder>() {
     class Viewholder(itemView: View):RecyclerView.ViewHolder(itemView){
@@ -31,12 +31,7 @@ class ImageAdapter(var list:ArrayList<MovieModel>): RecyclerView.Adapter<ImageAd
         holder.imageView.setImageResource(list[position].imageId)
 
         holder.itemView.setOnClickListener {
-            val dialog = Dialog(holder.imageView.context)
-            dialog.setContentView(R.layout.movie_detail_dialog)
-            dialog.setTitle(list[position].text)
-            val image = dialog.findViewById<ImageView>(R.id.imageView2)
-            image.setImageResource(list[position].imageId)
-            dialog.show()
+
         }
     }
 }

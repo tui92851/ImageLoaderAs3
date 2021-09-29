@@ -1,4 +1,4 @@
-package com.uni.image
+package edu.temple.image
 
 import org.junit.Test
 

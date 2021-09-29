@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageLoader">
         <activity
-            android:name=".ImageActivity"
+            android:name="edu.temple.image.ImageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
